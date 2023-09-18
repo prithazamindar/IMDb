@@ -5,7 +5,7 @@ const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const searchBtn = document.querySelector('.search-btn');
 const resultGrid = document.getElementById('result-flex');
-let searchTerm = (movieSearchBox.value).trim();
+var searchTerm = (movieSearchBox.value).trim();
 
 // load movies from API Async
 async function loadMovies(searchTerm){
@@ -27,7 +27,7 @@ function searchBoxBoderTrigger() {
 }
 
 function findMovies(){
-    let searchTerm = (movieSearchBox.value).trim();
+    // let searchTerm = (movieSearchBox.value).trim();
     if(searchTerm.length > 0){
         searchList.classList.remove('hide-search-list');
         loadMovies(searchTerm);
