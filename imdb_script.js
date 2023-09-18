@@ -26,7 +26,7 @@ function searchBoxBoderTrigger() {
 }
 
 function findMovies(){
-    let searchTerm = (movieSearchBox.value).trim();
+    var searchTerm = (movieSearchBox.value).trim();
     if(searchTerm.length > 0){
         searchList.classList.remove('hide-search-list');
         loadMovies(searchTerm);
